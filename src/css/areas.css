@@ -1,0 +1,25 @@
+.areas .area-info{
+    border: solid 3px var(--cor-dourada);
+    border-radius: 9px;
+    color: var(--cor-texto-branco);
+}
+
+.areas h2{
+    color: var(--cor-texto-dourado);
+}
+
+.swiper-button-prev, .swiper-button-next{
+    margin: 0;
+    background-color: var(--cor-fundo-dourado);
+    color: var(--cor-texto-escuro);
+}
+
+.areas button i{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.swiper-navigation-icon{
+    display: none;
+}

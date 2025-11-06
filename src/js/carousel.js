@@ -8,12 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let currentIndex = 0;
     const totalSlides = carousel.children.length;
-    const transitionDuration = 700;
+    const transitionDuration = 1000;
 
-    /**
-     * Move o carrossel para o índice de slide especificado.
-     * @param {number} index O índice do slide para o qual mover.
-     */
     function moveToSlide(index) {
         const offset = -index * slideWidth;
         carousel.style.transform = `translateX(${offset}px)`;

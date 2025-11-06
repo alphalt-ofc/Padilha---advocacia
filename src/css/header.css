@@ -1,0 +1,33 @@
+.header{
+    background-color: var(--cor-fundo-escuro);
+    color: var(--cor-texto-branco);
+    position: sticky;
+    top: 0;
+}
+
+.header nav a{
+    font-family: var(--open-sans);
+    font-size: 16px;
+}
+
+.header a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--cor-texto-claro); 
+}
+
+.header a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--cor-clara);
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-out; 
+}
+
+.header a:hover::after {
+    width: 100%; 
+}

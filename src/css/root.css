@@ -1,0 +1,56 @@
+:root {
+    /* Cores Base */
+    --cor-clara: #FFFFFF;
+    --cor-dourada: #B69D74;
+
+    /* Fundo */
+    --cor-fundo-principal: #263043;
+    --cor-fundo-escuro: #181E2B;
+    --cor-fundo-claro: #DADADF;
+    --cor-fundo-dourado: #B69D74;
+
+    /* Texto */
+    --cor-texto-dourado: #B69D74;
+    --cor-texto-branco: #FFFFFF;
+    --cor-texto-escuro: #181E2B;
+
+    /* Cores de Borda e Sombra */
+    --cor-borda: #dee2e6;
+    --cor-sombra: rgba(0, 0, 0, 0.1);
+
+    /* Fontes */
+    --open-sans: "Open Sans", sans-serif;
+    --eb-garamond:  "EB Garamond", serif;
+
+    /* Fontes tamanhos */
+    --semibold: 600;
+    --regular: 400;
+
+    
+    /* Espaçamentos */
+
+}
+
+body{
+    background-color: var(--cor-fundo-principal);
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+}
+
+.titulo{
+    font-family: var(--open-sans);
+    font-size: 35px;
+    font-weight: var(--semibold);
+}
+
+.subtitulo{
+    font-family: var(--open-sans);
+    font-size: 22px;
+    font-weight: var(--semibold);
+}
+
+.texto{
+    font-family: var(--eb-garamond);
+    font-size: 16px;
+    font-weight: var(--regular);
+}

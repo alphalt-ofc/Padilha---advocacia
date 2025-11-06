@@ -1,0 +1,19 @@
+.advogados{
+    background-color: var(--cor-fundo-claro);
+    color: var(--cor-texto-escuro);
+}
+
+.advogados h2{
+    color: var(--cor-texto-escuro);
+}
+
+.advogado h3{
+    color: var(--cor-texto-claro);
+}
+
+.advogado p{
+    font-family: var(--eb-garamond);
+    font-size: 18px;
+    font-weight: var(--regular);
+}
+
