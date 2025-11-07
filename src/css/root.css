@@ -90,6 +90,10 @@ html {
         height: 300px!important;
     }
 
+    .resposive-guia-img{
+        height: 200px!important;
+    }
+
     footer .logo{
         height: 50px!important;
     }
@@ -103,5 +107,9 @@ html {
 
     footer .logo{
         height: 30px;
+    }
+
+    .resposive-guia-img{
+        height: 300px;
     }
 }
