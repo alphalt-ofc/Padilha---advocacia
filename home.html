@@ -24,44 +24,63 @@
 </head>
 <body>
     <!--HEADER-->
-    <header class="header z-10 w-full z-1000">
-        <div class="flex justify-between mx-auto max-w-[1280px] items-center">
-            <img class="h-[99px]" src="./src/img/logo-padilha-dourado.png" alt="">
-
-
-            <nav class="flex moba-hidden">
+    <header class="header z-10 w-full z-1000 h-[99px] self-center">
+        <div class="flex justify-between mx-auto max-w-[1280px] items-center py-4 h-full px-4 lg:px-0">
+            
+            <img class="logo h-[50px] w-auto" src="./src/img/logo-light.png" alt="Logo Padilha Advogados">
+            
+            <button id="menu-toggle" class="lg:hidden text-2xl p-2 z-2000 text-white">
+                <i class="bi bi-list"></i> 
+            </button>
+            
+            <nav class="flex moba-hidden hidden lg:flex"> 
                 <ul class="flex gap-5">
-                    <li><a href="#top">HOME</a></li>
-                    <li><a href="">SOBRE</a></li>
-                    <li><a href="#escritorio">ESCRITÓRIO</a></li>
-                    <li><a href="">ÁREAS DE ATUAÇÃO</a></li>
-                    <li><a href="">BLOG</a></li>
-                    <li><a href="">CONTATO</a></li>
+                    <li><a href="#top" class="texto">HOME</a></li>
+                    <li><a href="#sobre" class="texto">SOBRE</a></li>
+                    <li><a href="#escritorio" class="texto">ESCRITÓRIO</a></li>
+                    <li><a href="#areas" class="texto">ÁREAS DE ATUAÇÃO</a></li>
+                    <li><a href="#blog" class="texto">BLOG</a></li>
+                    <li><a href="#contato" class="texto">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="mobile-menu-overlay" class="mobile-menu-overlay">
+            <nav class="mobile-nav relative">
+                            <button id="menu-close" class="close-button absolute top-[-60px] right-[-30px]"><i class="bi bi-x"></i></button>
+                <ul id="mobile-nav-list" class="flex flex-col gap-7">
+                    <li class="w-[200px] flex justify-center"><a href="#top" class="texto">HOME</a></li>
+                    <li class="w-[200px] flex justify-center"><a href="" class="texto">SOBRE</a></li>
+                    <li class="w-[200px] flex justify-center"><a href="#escritorio" class="texto">ESCRITÓRIO</a></li>
+                    <li class="w-[200px] flex justify-center"><a href="" class="texto">ÁREAS DE ATUAÇÃO</a></li>
+                    <li class="w-[200px] flex justify-center"><a href="" class="texto">BLOG</a></li>
+                    <li class="w-[200px] flex justify-center"><a href="" class="texto">CONTATO</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+
+
     <!--MAIN-->
     <main id="top">
         <!--carousel-->
         <section class="relative w-full overflow-hidden">
-            <div class="flex transition-transform duration-[1000ms] ease-in-out" id="carousel">
-                <div class="w-full h-[500px] flex-shrink-0 relative">
+            <div class=" flex transition-transform duration-[1000ms] ease-in-out" id="carousel">
+                <div class="resposive-img w-full h-[500px] flex-shrink-0 relative">
                     <img 
                         src="./src/img/advocacia1.jpg" 
                         alt="Imagem do Slide" 
                         class="absolute w-full h-full object-cover" 
                     >
                 </div>
-                <div class="w-full h-[500px] flex-shrink-0 relative">
+                <div class="resposive-img w-full h-[500px] flex-shrink-0 relative">
                     <img 
                         src="./src/img/advocacia2.jpg" 
                         alt="Imagem do Slide" 
                         class="absolute w-full h-full object-cover" 
                     >
                 </div>
-                <div class="w-full h-[500px] flex-shrink-0 relative">
+                <div class="resposive-img w-full h-[500px] flex-shrink-0 relative">
                     <img 
                         src="./src/img/advocacia3.png" 
                         alt="Imagem do Slide" 
@@ -75,12 +94,12 @@
         <section id="escritorio" class="escritorio py-[60px] w-full">
             <div class="max-w-[1280px] flex flex-col mx-auto text-center gap-[25px]">
                 <h2 class="titulo">Escritório</h2>
-                <p class="subtitulo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae impedit optio totam expedita, placeat suscipit pariatur, inventore obcaecati rerum aliquid facilis at corporis dicta vero reprehenderit cum eum voluptates. Ut dolores quam voluptatibus? Nemo, amet blanditiis eos quas nesciunt quibusdam a aliquid. Excepturi adipisci voluptas soluta ullam quam nobis numquam exercitationem recusandae nesciunt architecto, atque itaque neque voluptate pariatur repellat vitae, eius sunt earum? Quae perferendis aspernatur iste facilis eaque officiis modi qui illo veniam quas tempora et autem, facere placeat corporis hic sequi reprehenderit ratione magnam illum asperiores ea a! Obcaecati officia modi similique voluptas autem quas debitis quidem.</p>
+                <p class="subtitulo text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae impedit optio totam expedita, placeat suscipit pariatur, inventore obcaecati rerum aliquid facilis at corporis dicta vero reprehenderit cum eum voluptates. Ut dolores quam voluptatibus? Nemo, amet blanditiis eos quas nesciunt quibusdam a aliquid. Excepturi adipisci voluptas soluta ullam quam nobis numquam exercitationem recusandae nesciunt architecto, atque itaque neque voluptate pariatur repellat vitae, eius sunt earum? Quae perferendis aspernatur iste facilis eaque officiis modi qui illo veniam quas tempora et autem, facere placeat corporis hic sequi reprehenderit ratione magnam illum asperiores ea a! Obcaecati officia modi similique voluptas autem quas debitis quidem.</p>
             </div>
         </section>
 
         <!--img escritório-->
-        <div class="w-full h-[500px] flex-shrink-0 relative">
+        <div class="resposive-img w-full h-[500px] flex-shrink-0 relative">
             <img 
                 src="./src/img/escritorio-empresa.jpg" 
                 alt="Imagem do Slide" 
@@ -215,4 +234,5 @@
 
 <script src="./src/js/carousel.js"></script>
 <script src="./src/js/areas.js"></script>
+<script src="./src/js/header.js"></script>
 </html>

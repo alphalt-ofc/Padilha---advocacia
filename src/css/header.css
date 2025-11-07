@@ -31,3 +31,53 @@
 .header a:hover::after {
     width: 100%; 
 }
+
+/* ----------------------------------------------------------------- */
+/* ESTILOS ESSENCIAIS DO MENU MOBILE (Overlay) */
+/* ----------------------------------------------------------------- */
+
+/* Bloqueia o scroll do corpo quando o menu estiver aberto */
+body.no-scroll {
+    overflow: hidden;
+}
+
+.mobile-menu-overlay {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-fundo-escuro); 
+    z-index: 2000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    color: var(--cor-texto-branco);
+}
+
+.mobile-menu-overlay.is-open {
+    visibility: visible;
+    opacity: 98%;
+}
+
+.close-button i{
+    font-size: 30px;
+}
+
+.mobile-nav li{
+    border-bottom: solid 1px var(--cor-dourada);
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 767px) {
+    .header a::after{
+        display: none;
+    }
+
+    .header .logo{
+        height: 30px;
+    }
+}
