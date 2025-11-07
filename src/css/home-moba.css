@@ -1,0 +1,29 @@
+@media screen and (max-width: 767px) {
+    .moba-hidden{
+        display: none;
+    }
+
+    .advogados ul{
+        flex-direction: column;
+    }
+
+    .areas .guia{
+        justify-content: center;
+    }
+
+    footer .footer-cont{
+        flex-direction: column;
+        gap: 70px ;
+    }
+
+    footer .footer-sec{
+        width: 100%!important;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+
+    footer .footer-sec{
+        width: 200px;
+    }
+}

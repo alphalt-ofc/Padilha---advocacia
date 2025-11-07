@@ -2,6 +2,7 @@
     border: solid 3px var(--cor-dourada);
     border-radius: 9px;
     color: var(--cor-texto-branco);
+    height: 258px;
 }
 
 .areas h2{

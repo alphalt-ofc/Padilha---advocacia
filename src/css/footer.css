@@ -1,0 +1,11 @@
+footer{
+    background-color: var(--cor-fundo-escuro);
+}
+
+footer p, footer a, footer .navegação a{
+    color: var(--cor-texto-branco);
+}
+
+footer .contato i, footer h2{
+    color: var(--cor-texto-dourado);
+}

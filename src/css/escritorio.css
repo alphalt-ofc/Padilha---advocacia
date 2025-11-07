@@ -4,7 +4,6 @@
 
 .escritorio p{
     font-family: var(--eb-garamond);
-    font-size: 22px;
+    font-weight: var(--regular);
     color: var(--cor-texto-branco);
-    font-weight: 400;
 }

@@ -17,18 +17,23 @@
     <link rel="stylesheet" href="./src/css/escritorio.css">
     <link rel="stylesheet" href="./src/css/advogados.css">
     <link rel="stylesheet" href="./src/css/areas.css">
+    <link rel="stylesheet" href="./src/css/footer.css">
+    <link rel="stylesheet" href="./src/css/home-moba.css">
+
     <title>Document</title>
 </head>
 <body>
     <!--HEADER-->
-    <header class="header z-10 w-full">
+    <header class="header z-10 w-full z-1000">
         <div class="flex justify-between mx-auto max-w-[1280px] items-center">
             <img class="h-[99px]" src="./src/img/logo-padilha-dourado.png" alt="">
-            <nav class="flex">
+
+
+            <nav class="flex moba-hidden">
                 <ul class="flex gap-5">
-                    <li><a href="">HOME</a></li>
+                    <li><a href="#top">HOME</a></li>
                     <li><a href="">SOBRE</a></li>
-                    <li><a href="">ESCRITÓRIO</a></li>
+                    <li><a href="#escritorio">ESCRITÓRIO</a></li>
                     <li><a href="">ÁREAS DE ATUAÇÃO</a></li>
                     <li><a href="">BLOG</a></li>
                     <li><a href="">CONTATO</a></li>
@@ -38,7 +43,7 @@
     </header>
 
     <!--MAIN-->
-    <main>
+    <main id="top">
         <!--carousel-->
         <section class="relative w-full overflow-hidden">
             <div class="flex transition-transform duration-[1000ms] ease-in-out" id="carousel">
@@ -67,10 +72,10 @@
         </section>
 
         <!--escritório-->
-        <section class="escritorio py-[60px] w-full">
+        <section id="escritorio" class="escritorio py-[60px] w-full">
             <div class="max-w-[1280px] flex flex-col mx-auto text-center gap-[25px]">
                 <h2 class="titulo">Escritório</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae impedit optio totam expedita, placeat suscipit pariatur, inventore obcaecati rerum aliquid facilis at corporis dicta vero reprehenderit cum eum voluptates. Ut dolores quam voluptatibus? Nemo, amet blanditiis eos quas nesciunt quibusdam a aliquid. Excepturi adipisci voluptas soluta ullam quam nobis numquam exercitationem recusandae nesciunt architecto, atque itaque neque voluptate pariatur repellat vitae, eius sunt earum? Quae perferendis aspernatur iste facilis eaque officiis modi qui illo veniam quas tempora et autem, facere placeat corporis hic sequi reprehenderit ratione magnam illum asperiores ea a! Obcaecati officia modi similique voluptas autem quas debitis quidem.</p>
+                <p class="subtitulo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae impedit optio totam expedita, placeat suscipit pariatur, inventore obcaecati rerum aliquid facilis at corporis dicta vero reprehenderit cum eum voluptates. Ut dolores quam voluptatibus? Nemo, amet blanditiis eos quas nesciunt quibusdam a aliquid. Excepturi adipisci voluptas soluta ullam quam nobis numquam exercitationem recusandae nesciunt architecto, atque itaque neque voluptate pariatur repellat vitae, eius sunt earum? Quae perferendis aspernatur iste facilis eaque officiis modi qui illo veniam quas tempora et autem, facere placeat corporis hic sequi reprehenderit ratione magnam illum asperiores ea a! Obcaecati officia modi similique voluptas autem quas debitis quidem.</p>
             </div>
         </section>
 
@@ -89,21 +94,21 @@
             <div>
                 <ul class="max-w-[1280px] flex justify-between mx-auto">
                     <!--advogados li-->
-                    <li class="advogado flex flex-col text-center gap-[30px]">
+                    <li class="advogado flex flex-col items-center text-center gap-[30px]">
                         <div class="bg-sky-400 h-[190px] w-[190px] rounded-full overflow-hidden drop-shadow-lg"><img class="w-full h-full object-cover" src="./src/img/pessoa1.jpg" alt=""></div>
                         <div>
                             <h3 class="subtitulo">Nome</h3>
                             <p>cargo / segmento</p>
                         </div>
                     </li>
-                    <li class="advogado flex flex-col text-center gap-[30px]">
+                    <li class="advogado flex flex-col items-center text-center gap-[30px]">
                         <div class="bg-sky-400 h-[190px] w-[190px] rounded-full overflow-hidden drop-shadow-lg"><img class="w-full h-full object-cover" src="./src/img/pessoa2.jpg" alt=""></div>
                         <div>
                             <h3 class="subtitulo">Nome</h3>
                             <p>cargo / segmento</p>
                         </div>
                     </li>
-                    <li class="advogado flex flex-col text-center gap-[30px]">
+                    <li class="advogado flex flex-col items-center text-center gap-[30px]">
                         <div class="bg-sky-400 h-[190px] w-[190px] rounded-full overflow-hidden drop-shadow-lg"><img class="w-full h-full object-cover" src="./src/img/pessoa1.jpg" alt=""></div>
                         <div>
                             <h3 class="subtitulo">Nome</h3>
@@ -116,45 +121,94 @@
 
         <section class="areas w-full py-[60px]">
             <div class="max-w-[1280px] mx-auto text-center">
-                <div class="pb-[46px] flex w-full justify-between items-center">
-                    <button class="swiper-button-prev static! rounded-full hidden lg:flex"><i class="bi bi-arrow-left-short"></i></button>
+                <div class="guia pb-[46px] flex w-full justify-between items-center">
+                    <button class="swiper-button-prev static! rounded-full moba-hidden z-1"><i class="bi bi-arrow-left-short"></i></button>
                     <h2 class="titulo">Áreas de Atuação</h2>
-                    <button class="swiper-button-next static! rounded-full hidden lg:flex"><i class="bi bi-arrow-right-short"></i></button>
+                    <button class="swiper-button-next static! rounded-full moba-hidden z-1"><i class="bi bi-arrow-right-short"></i></button>
                 </div>
-                
-                <div class="swiper" id="swiper-areas"> 
+                <div class="area-responsivo">
+                    <div class="swiper" id="swiper-areas"> 
                     
                     <div class="swiper-wrapper text-start">
                         
-                        <div class="area-info w-[370px]! h-[258px]! px-[29px] py-[20px] swiper-slide">
+                        <div class="area-info h-[258px]! px-[29px] py-[20px] swiper-slide">
                             <h3 class="subtitulo">Direito Processual Civil</h3>
                             <p class="texto">Representamos clientes em litígios nas áreas civil, comercial, societária, administrativa, familiar e tributária, em todas as instâncias, com especial atuação perante o Superior Tribunal de Justiça e o Supremo Tribunal Federal. O escritório tem forte experiência em ações coletivas, bancárias e de direito do consumidor.</p>
                         </div>
-                        <div class="area-info w-[370px]! h-[258px]! px-[29px] py-[20px] swiper-slide">
+                        <div class="area-info h-[258px]! px-[29px] py-[20px] swiper-slide">
                             <h3 class="subtitulo">Direito Processual Civil</h3>
                             <p class="texto">Representamos clientes em litígios nas áreas civil, comercial, societária, administrativa, familiar e tributária, em todas as instâncias, com especial atuação perante o Superior Tribunal de Justiça e o Supremo Tribunal Federal. O escritório tem forte experiência em ações coletivas, bancárias e de direito do consumidor.</p>
-                        </div>                        <div class="area-info w-[370px]! h-[258px]! px-[29px] py-[20px] swiper-slide">
+                        </div>                        
+                        <div class="area-info h-[258px]! px-[29px] py-[20px] swiper-slide">
                             <h3 class="subtitulo">Direito Processual Civil</h3>
                             <p class="texto">Representamos clientes em litígios nas áreas civil, comercial, societária, administrativa, familiar e tributária, em todas as instâncias, com especial atuação perante o Superior Tribunal de Justiça e o Supremo Tribunal Federal. O escritório tem forte experiência em ações coletivas, bancárias e de direito do consumidor.</p>
-                        </div>                        <div class="area-info w-[370px]! h-[258px]! px-[29px] py-[20px] swiper-slide">
+                        </div>                        
+                        <div class="area-info h-[258px]! px-[29px] py-[20px] swiper-slide">
                             <h3 class="subtitulo">Direito Processual Civil</h3>
                             <p class="texto">Representamos clientes em litígios nas áreas civil, comercial, societária, administrativa, familiar e tributária, em todas as instâncias, com especial atuação perante o Superior Tribunal de Justiça e o Supremo Tribunal Federal. O escritório tem forte experiência em ações coletivas, bancárias e de direito do consumidor.</p>
-                        </div>                        <div class="area-info w-[370px]! h-[258px]! px-[29px] py-[20px] swiper-slide">
+                        </div>                        
+                        <div class="area-info h-[258px]! px-[29px] py-[20px] swiper-slide">
                             <h3 class="subtitulo">Direito Processual Civil</h3>
                             <p class="texto">Representamos clientes em litígios nas áreas civil, comercial, societária, administrativa, familiar e tributária, em todas as instâncias, com especial atuação perante o Superior Tribunal de Justiça e o Supremo Tribunal Federal. O escritório tem forte experiência em ações coletivas, bancárias e de direito do consumidor.</p>
-                        </div>                        <div class="area-info w-[370px]! h-[258px]! px-[29px] py-[20px] swiper-slide">
+                        </div>                        
+                        <div class="area-info h-[258px]! px-[29px] py-[20px] swiper-slide">
                             <h3 class="subtitulo">Direito Processual Civil</h3>
                             <p class="texto">Representamos clientes em litígios nas áreas civil, comercial, societária, administrativa, familiar e tributária, em todas as instâncias, com especial atuação perante o Superior Tribunal de Justiça e o Supremo Tribunal Federal. O escritório tem forte experiência em ações coletivas, bancárias e de direito do consumidor.</p>
                         </div>
 
                     </div>
-
-
-
                 </div>
-
             </div>
         </section>
+
+
+        <footer class="footer w-full py-[60px]">
+            <div class="max-w-[1280px] mx-auto">
+                <ul class="footer-cont flex justify-between items-center">
+                    <li class="footer-sec flex flex-col w-[300px] justify-start gap-[29px]">
+                        <img class="h-[99px] w-auto self-start" src="./src/img/logo-padilha-dourado.png" alt="">
+                        <p class="texto">Somos uma firma jurídica que visa sempre a excelência e o atendimento individualizado de cada uma das demandas de nossos clientes, tendo como marca maior a alta performance jurídica. Conheça nosso trabalho.</p>
+                        <ul class="flex gap-5">
+                            <li class="icon"><a href=""><i class="bi bi-linkedin"></i></a></li>
+                            <li class="icon"><a href=""><i class="bi bi-instagram"></i></a></li>
+                            <li class="icon"><a href=""><i class="bi bi-whatsapp"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="footer-sec contato flex flex-col w-[300px] justify-start gap-[29px]">
+                        <h2 class="subtitulo">Contato</h2>
+                        <ul class="flex flex-col gap-[15px]">
+                            <li class="icon flex gap-7 items-center">
+                                <i class="bi bi-globe text-lg"></i>
+                                <p class="texto">R. Dep. Elizeu Teixeira, 555, Ponta Verde - Sala 301. Empresarial José Lages</p>
+                            </li>
+                            <li class="icon flex gap-7 items-center">
+                                <i class="bi bi-telephone text-lg"></i>
+                                <p class="texto">+55 82 981841016</p>
+                            </li>
+                            <li class="icon flex gap-7 items-center">
+                                <i class="bi bi-envelope text-lg"></i>
+                                <p class="texto">contato@padilhadvogados.com.br</p>
+                            </li>
+                            <li class="icon flex gap-7 items-center">
+                                <i class="bi bi-clock text-lg"></i>
+                                <p class="texto">Segunda - Sexta: 08:00 - 18:00</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer-sec navegação flex flex-col w-[300px] justify-start gap-[29px]">
+                        <h2 class="subtitulo">Navegação</h2>
+                        <ul class="flex flex-col gap-[15px]">
+                            <li><a href="#top" class="texto">Home</a></li>
+                            <li><a href="#escritorio" class="texto">Escritório</a></li>
+                            <li><a href="" class="texto">Sobre</a></li>
+                            <li><a href="" class="texto">Áreas de atuação</a></li>
+                            <li><a href="" class="texto">Blog</a></li>
+                            <li><a href="" class="texto">Contato</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </main>
 
 </body>

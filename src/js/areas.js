@@ -2,29 +2,39 @@ document.addEventListener('DOMContentLoaded', () => {
     // Inicializa o Swiper no elemento com ID 'swiper-areas'
     const mySwiper = new Swiper('#swiper-areas', {
         
-        // Configuração para exibir 3 slides por vez
+        // Configurações Padrão (Fallback, normalmente Desktop)
         slidesPerView: 3, 
-        
-        // O Espaçamento entre os slides (replicando o justify-between)
-        spaceBetween: 85, // 170px de espaço total / 2 lacunas = 85px
-        
-        // Opcional: Desabilita a rolagem infinita
+        spaceBetween: 85, 
         loop: false,
-        
-        // Garante que o carrossel pare na próxima página completa
         slidesPerGroup: 1,
-        
-        // Transição suave
         speed: 700,
 
-        // Adiciona as setas de navegação
+        // Por padrão, esconde os botões (para mobile)
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
         
-        // Se houver mais de 6 slides, você pode limitar o número de transições:
-        // Por exemplo, 2 grupos de 3, apenas 1 transição total.
-        // Se você tiver 6 slides, o Swiper já faz isso automaticamente com slidesPerGroup: 3
+        // --- Breakpoints RESPONSIVOS ---
+        breakpoints: {
+            // 0 a 767px (Telas menores/Mobile)
+            0: {
+                slidesPerView: 1.2, // Mostra 1 card e 20% do próximo (dando a ideia de continuidade)
+                spaceBetween: 20,   // Espaço menor entre os cards
+                centeredSlides: false, // Inicia no primeiro slide
+            },
+            
+            // 768px a 1023px (Tablets)
+            768: {
+                slidesPerView: 2, // Mostra 2 cards
+                spaceBetween: 40, 
+            },
+
+            // 1024px e acima (Desktops)
+            1024: {
+                slidesPerView: 3, 
+                spaceBetween: 85,
+            }
+        },
     });
 });
