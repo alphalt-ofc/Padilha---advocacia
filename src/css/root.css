@@ -71,3 +71,37 @@ html {
 .header{
     padding: 0 40px;
 }
+
+@media screen and (max-width: 767px) {
+    .moba-hidden{
+        display: none;
+    }
+
+    footer .footer-cont{
+        flex-direction: column;
+        gap: 70px ;
+    }
+
+    footer .footer-sec{
+        width: 100%!important;
+    }
+
+    .resposive-img{
+        height: 300px!important;
+    }
+
+    footer .logo{
+        height: 50px!important;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+
+    footer .footer-sec{
+        width: 200px;
+    }
+
+    footer .logo{
+        height: 30px;
+    }
+}

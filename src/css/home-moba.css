@@ -1,8 +1,4 @@
 @media screen and (max-width: 767px) {
-    .moba-hidden{
-        display: none;
-    }
-
     .advogados ul{
         flex-direction: column;
         gap: 70px;
@@ -10,25 +6,5 @@
 
     .areas .guia{
         justify-content: center;
-    }
-
-    footer .footer-cont{
-        flex-direction: column;
-        gap: 70px ;
-    }
-
-    footer .footer-sec{
-        width: 100%!important;
-    }
-
-    .resposive-img{
-        height: 300px!important;
-    }
-}
-
-@media screen and (max-width: 1023px) {
-
-    footer .footer-sec{
-        width: 200px;
     }
 }

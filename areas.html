@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!--FONTES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="./src/css/root.css">
+    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/escritorio.css">
+    <link rel="stylesheet" href="./src/css/advogados.css">
+    <link rel="stylesheet" href="./src/css/areas.css">
+    <link rel="stylesheet" href="./src/css/footer.css">
+    <link rel="stylesheet" href="./src/css/areas-moba.css">
+
+    <title>Home</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header class="header z-10 w-full z-1000 h-[99px] self-center">
+        <div class="flex justify-between mx-auto max-w-[1280px] items-center py-4 h-full px-4 lg:px-0">
+            
+            <img class="logo h-[50px] w-auto" src="./src/img/logo-light.png" alt="Logo Padilha Advogados">
+            
+            <button id="menu-toggle" class="lg:hidden text-2xl p-2 z-2000 text-white">
+                <i class="bi bi-list"></i> 
+            </button>
+            
+            <nav class="flex moba-hidden hidden lg:flex"> 
+                <ul class="flex gap-5">
+                    <li><a href="#top" class="texto">HOME</a></li>
+                    <li><a href="#sobre" class="texto">SOBRE</a></li>
+                    <li><a href="#escritorio" class="texto">ESCRITÓRIO</a></li>
+                    <li><a href="#areas" class="texto">ÁREAS DE ATUAÇÃO</a></li>
+                    <li><a href="#blog" class="texto">BLOG</a></li>
+                    <li><a href="#contato" class="texto">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="mobile-menu-overlay" class="mobile-menu-overlay">
+            <nav class="mobile-nav relative">
+                            <button id="menu-close" class="close-button absolute top-[-60px] right-[-30px]"><i class="bi bi-x"></i></button>
+                <ul id="mobile-nav-list" class="flex flex-col gap-7">
+                    <li class="w-[200px] flex justify-center"><a href="#top" class="texto">HOME</a></li>
+                    <li class="w-[200px] flex justify-center"><a href="" class="texto">SOBRE</a></li>
+                    <li class="w-[200px] flex justify-center"><a href="#escritorio" class="texto">ESCRITÓRIO</a></li>
+                    <li class="w-[200px] flex justify-center"><a href="" class="texto">ÁREAS DE ATUAÇÃO</a></li>
+                    <li class="w-[200px] flex justify-center"><a href="" class="texto">BLOG</a></li>
+                    <li class="w-[200px] flex justify-center"><a href="" class="texto">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--MAIN-->
+    <main id="top">
+        <!--img escritório-->
+        <div class="resposive-img w-full h-[500px] flex-shrink-0 relative">
+            <img 
+                src="./src/img/areas-de-atuação.png" 
+                alt="Imagem do Slide" 
+                class="absolute w-full h-full object-cover" 
+            >
+        </div>
+        <section class="w-full areas-page">
+            <section class="areas flex max-w-[1280px] mx-auto">
+                <div class="areas-sec flex flex-wrap justify-between w-full gap-8 items-center">
+                    <div class="area-info h-[258px]! w-[370px] px-[29px] py-[20px]">
+                        <h3 class="subtitulo">Direito Processual Civil</h3>
+                        <p class="texto">Representamos clientes em litígios nas áreas civil, comercial, societária, administrativa, familiar e tributária, em todas as instâncias, com especial atuação perante o Superior Tribunal de Justiça e o Supremo Tribunal Federal. O escritório tem forte experiência em ações coletivas, bancárias e de direito do consumidor.</p>
+                    </div>
+                    <div class="area-info h-[258px]! w-[370px] px-[29px] py-[20px]">
+                        <h3 class="subtitulo">Direito Processual Civil</h3>
+                        <p class="texto">Representamos clientes em litígios nas áreas civil, comercial, societária, administrativa, familiar e tributária, em todas as instâncias, com especial atuação perante o Superior Tribunal de Justiça e o Supremo Tribunal Federal. O escritório tem forte experiência em ações coletivas, bancárias e de direito do consumidor.</p>
+                    </div>
+                    <div class="area-info h-[258px]! w-[370px] px-[29px] py-[20px]">
+                        <h3 class="subtitulo">Direito Processual Civil</h3>
+                        <p class="texto">Representamos clientes em litígios nas áreas civil, comercial, societária, administrativa, familiar e tributária, em todas as instâncias, com especial atuação perante o Superior Tribunal de Justiça e o Supremo Tribunal Federal. O escritório tem forte experiência em ações coletivas, bancárias e de direito do consumidor.</p>
+                    </div>
+                    <div class="area-info h-[258px]! w-[370px] px-[29px] py-[20px]">
+                        <h3 class="subtitulo">Direito Processual Civil</h3>
+                        <p class="texto">Representamos clientes em litígios nas áreas civil, comercial, societária, administrativa, familiar e tributária, em todas as instâncias, com especial atuação perante o Superior Tribunal de Justiça e o Supremo Tribunal Federal. O escritório tem forte experiência em ações coletivas, bancárias e de direito do consumidor.</p>
+                    </div>
+                    <div class="area-info h-[258px]! w-[370px] px-[29px] py-[20px]">
+                        <h3 class="subtitulo">Direito Processual Civil</h3>
+                        <p class="texto">Representamos clientes em litígios nas áreas civil, comercial, societária, administrativa, familiar e tributária, em todas as instâncias, com especial atuação perante o Superior Tribunal de Justiça e o Supremo Tribunal Federal. O escritório tem forte experiência em ações coletivas, bancárias e de direito do consumidor.</p>
+                    </div>
+                    <div class="area-info h-[258px]! w-[370px] px-[29px] py-[20px]">
+                        <h3 class="subtitulo">Direito Processual Civil</h3>
+                        <p class="texto">Representamos clientes em litígios nas áreas civil, comercial, societária, administrativa, familiar e tributária, em todas as instâncias, com especial atuação perante o Superior Tribunal de Justiça e o Supremo Tribunal Federal. O escritório tem forte experiência em ações coletivas, bancárias e de direito do consumidor.</p>
+                    </div>
+                    <div class="area-info h-[258px]! w-[370px] px-[29px] py-[20px]">
+                        <h3 class="subtitulo">Direito Processual Civil</h3>
+                        <p class="texto">Representamos clientes em litígios nas áreas civil, comercial, societária, administrativa, familiar e tributária, em todas as instâncias, com especial atuação perante o Superior Tribunal de Justiça e o Supremo Tribunal Federal. O escritório tem forte experiência em ações coletivas, bancárias e de direito do consumidor.</p>
+                    </div>
+                    <div class="area-info h-[258px]! w-[370px] px-[29px] py-[20px]">
+                        <h3 class="subtitulo">Direito Processual Civil</h3>
+                        <p class="texto">Representamos clientes em litígios nas áreas civil, comercial, societária, administrativa, familiar e tributária, em todas as instâncias, com especial atuação perante o Superior Tribunal de Justiça e o Supremo Tribunal Federal. O escritório tem forte experiência em ações coletivas, bancárias e de direito do consumidor.</p>
+                    </div>
+                    <div class="area-info h-[258px]! w-[370px] px-[29px] py-[20px]">
+                        <h3 class="subtitulo">Direito Processual Civil</h3>
+                        <p class="texto">Representamos clientes em litígios nas áreas civil, comercial, societária, administrativa, familiar e tributária, em todas as instâncias, com especial atuação perante o Superior Tribunal de Justiça e o Supremo Tribunal Federal. O escritório tem forte experiência em ações coletivas, bancárias e de direito do consumidor.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+
+    <!--footer-->
+    <footer class="footer w-full py-[60px]">
+        <div class="max-w-[1280px] mx-auto">
+            <ul class="footer-cont flex justify-between items-center">
+                <li class="footer-sec flex flex-col w-[300px] justify-start gap-[29px]">
+                    <img class="logo h-[50px] w-auto self-start" src="./src/img/logo-light.png" alt="">
+                    <p class="texto">Somos uma firma jurídica que visa sempre a excelência e o atendimento individualizado de cada uma das demandas de nossos clientes, tendo como marca maior a alta performance jurídica. Conheça nosso trabalho.</p>
+                    <ul class="flex gap-5">
+                        <li class="icon"><a href=""><i class="bi bi-linkedin"></i></a></li>
+                        <li class="icon"><a href=""><i class="bi bi-instagram"></i></a></li>
+                        <li class="icon"><a href=""><i class="bi bi-whatsapp"></i></a></li>
+                    </ul>
+                </li>
+                <li class="footer-sec contato flex flex-col w-[300px] justify-start gap-[29px]">
+                    <h2 class="subtitulo">Contato</h2>
+                    <ul class="flex flex-col gap-[15px]">
+                        <li class="icon flex gap-7 items-center">
+                            <i class="bi bi-globe text-lg"></i>
+                            <p class="texto">R. Dep. Elizeu Teixeira, 555, Ponta Verde - Sala 301. Empresarial José Lages</p>
+                        </li>
+                        <li class="icon flex gap-7 items-center">
+                            <i class="bi bi-telephone text-lg"></i>
+                            <p class="texto">+55 82 981841016</p>
+                        </li>
+                        <li class="icon flex gap-7 items-center">
+                            <i class="bi bi-envelope text-lg"></i>
+                            <p class="texto">contato@padilhadvogados.com.br</p>
+                        </li>
+                        <li class="icon flex gap-7 items-center">
+                            <i class="bi bi-clock text-lg"></i>
+                            <p class="texto">Segunda - Sexta: 08:00 - 18:00</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer-sec navegação flex flex-col w-[300px] justify-start gap-[29px]">
+                    <h2 class="subtitulo">Navegação</h2>
+                    <ul class="flex flex-col gap-[15px]">
+                        <li><a href="./home.html" class="texto">Home</a></li>
+                        <li><a href="#escritorio" class="texto">Escritório</a></li>
+                        <li><a href="" class="texto">Sobre</a></li>
+                        <li><a href="" class="texto">Áreas de atuação</a></li>
+                        <li><a href="" class="texto">Blog</a></li>
+                        <li><a href="" class="texto">Contato</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>

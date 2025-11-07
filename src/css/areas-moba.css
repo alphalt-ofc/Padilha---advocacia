@@ -1,0 +1,5 @@
+@media screen and (max-width: 852px) {
+    .areas-page .areas .areas-sec{
+        justify-content: center!important;
+    }
+}
