@@ -1,0 +1,23 @@
+.sobre-page .segmento{
+    font-family: var(--open-sans)!important;
+}
+
+.sobre-page .advogados{
+    background-color: var(--cor-fundo-claro);
+}
+
+.sobre-page .line {
+    width: 100%;
+    height: 3px;
+
+    background-image: linear-gradient(
+        to right, 
+        var(--cor-texto-escuro) 10px, 
+        transparent 0% 
+    );
+
+    background-size: 30px 3px; 
+    background-repeat: repeat-x;
+
+}
+

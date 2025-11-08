@@ -61,6 +61,12 @@ main{
     font-size: clamp(18px, 1.15vw, 22px);
 }
 
+.texto-medio {
+    font-family: var(--eb-garamond);
+    font-weight: var(--regular);
+    font-size: clamp(14px, 0.99vw, 19px);
+}
+
 .texto {
     font-family: var(--eb-garamond);
     font-weight: var(--regular);
@@ -72,7 +78,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.areas, .advogados, .escritorio, .footer{
+.areas, .advogados, .escritorio, .footer, .contato-page, .sobre-page .sobre{
     padding: 90px 40px;
 }
 

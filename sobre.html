@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./src/css/footer.css">
     <link rel="stylesheet" href="./src/css/areas-moba.css">
     <link rel="stylesheet" href="./src/css/contato.css">
+    <link rel="stylesheet" href="./src/css/sobre.css">
 
     <title>Home</title>
 </head>
@@ -62,74 +63,95 @@
     </header>
 
     <!--MAIN-->
-    <main id="top">
+    <main id="top" class="sobre-page">
         <!--img escritório-->
         <div class="resposive-guia-img w-full h-[500px] flex-shrink-0 relative">
             <img 
-                src="./src/img/contato.png" 
+                src="./src/img/quem-somos.png" 
                 alt="Imagem do Slide" 
                 class="absolute w-full h-full object-cover" 
             >
         </div>
-        <section class="w-full contato-page">
-            <section class="contato flex flex-col lg:flex-row max-w-[1280px] mx-auto lg:px-0 gap-10">
-                
-                <div class="dados w-full lg:w-1/3">
-                    <h2 class="titulo-destaque mb-8">Contato</h2>
-                    <ul class="flex flex-col gap-[15px]">
-                        
-                        <li class="icon flex gap-7 items-center">
-                            <i class="bi bi-telephone text-lg text-white"></i>
-                            <p class="texto text-white">+55 82 981841016</p>
-                        </li>
-                        
-                        <li class="icon flex gap-7 items-center">
-                            <i class="bi bi-envelope text-lg text-white"></i>
-                            <p class="texto text-white">contato@padilhadvogados.com.br</p>
-                        </li>
-                        
-                        <li class="icon flex gap-7 items-center">
-                            <i class="bi bi-heart-fill text-lg text-white"></i>
-                            <ul class="redes flex gap-5">
-                                <li class="icon"><a href="" class="text-white"><i class="bi bi-linkedin"></i></a></li>
-                                <li class="icon"><a href="" class="text-white"><i class="bi bi-instagram"></i></a></li>
-                                <li class="icon"><a href="" class="text-white"><i class="bi bi-whatsapp"></i></a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
 
-                <div class="form w-full lg:w-2/3">
-                    <form action="">
-                        
-                        <div class="flex flex-col lg:flex-row gap-5 mb-5">
-                            <div class="w-full lg:w-1/2">
-                                <label for="nome" class="texto form-label">Nome</label>
-                                <input type="text" id="nome" name="nome" class="form-input">
-                            </div>
-                            <div class="w-full lg:w-1/2">
-                                <label for="sobrenome" class="texto form-label">Sobrenome</label>
-                                <input type="text" id="sobrenome" name="sobrenome" class="form-input">
-                            </div>
+        <!--SOBRE-->
+        <section class="w-full sobre">
+            <div class="max-w-[1280px] mx-auto">
+                <div class="flex flex-col lg:flex-row lg:gap-[202px] gap-15 items-center justify-center">
+                    
+                    <div class="w-full lg:w-1/4 flex justify-center">
+                        <div class="w-[200px] flex justify-center">
+                            <img src="./src/img/logo-icon-dourada.jpg" alt="" class="rounded-[38px]">
                         </div>
-                        
-                        <div class="mb-5">
-                            <label for="email" class="texto form-label">Email</label>
-                            <input type="email" id="email" name="email" class="form-input">
-                        </div>
-                        
-                        <div class="mb-8">
-                            <label for="mensagem" class="texto form-label">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" rows="6" class="form-input"></textarea>
-                        </div>
-                        
-                        <div>
-                            <button type="submit" class="btn-enviar">Enviar</button>
-                        </div>
-
-                    </form>
+                    </div>
+                    
+                    <div class="w-full lg:w-[600px]">
+                        <p class="texto text-white mb-6">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p class="texto text-white">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
+
+
+        <!--ADVOGADOS-->
+        <section class="w-full advogados">
+            <div class="max-w-[1280px] mx-auto flex flex-col gap-[90px]">
+                <div class="adv-card flex flex-col lg:flex-row lg:gap-[202px] gap-15 w-full justify-center items-center">
+                    <div class="lg:w-[275px] w-[200px] flex justify-center">
+                        <img src="./src/img/advogado-1.webp" alt="Foto do Advogado Jonathnan" class="adv-photo rounded-full">
+                    </div>
+                    
+                    <div class="w-full lg:w-[600px]">
+                        <h3 class="subtitulo text-black mb-2">João Padilha</h3>
+                        <p class="texto-medio text-black">
+                            Possui sólida formação e atuação voltada ao Direito Empresarial, Propriedade Intelectual, Direito Público e Direito Digital. Especialista em Direito Público e Digital, dedica-se à proteção de ativos intangíveis como marcas, patentes, softwares e segredos comerciais.
+                        </p>
+                        <p class="texto-medio text-black mt-4">
+                            Atua em consultoria e contencioso estratégico, estruturação de contratos complexos e assessoramento a startups, unindo experiência prática e análise crítica dos impactos jurídicos da inovação e das novas tecnologias.
+                        </p>
+                        <p class="texto-medio segmento text-black mt-4">OAB/AL</p>
+                    </div>
+                </div>
+                <div class="line"></div>
+                                <div class="adv-card flex flex-col lg:flex-row-reverse lg:gap-[202px] gap-15 w-full justify-center items-center">
+                    <div class="lg:w-[275px] w-[200px] flex justify-center">
+                        <img src="./src/img/advogado-2.webp" alt="Foto do Advogado Jonathnan" class="adv-photo rounded-full">
+                    </div>
+                    
+                    <div class="w-full lg:w-[600px]">
+                        <h3 class="subtitulo text-black mb-2">Felipe Padilha</h3>
+                        <p class="texto-medio text-black">
+                            Sócio-Fundador | Padilha Advocacia & Consultoria Advogado inscrito na Ordem dos Advogados do Brasil, Seccional Alagoas, sob o nº 11.679. Sócio-fundador do escritório Padilha Advocacia & Consultoria, atua de forma estratégica em demandas cíveis, processuais e eleitorais.
+                        </p>
+                        <p class="texto-medio text-black mt-4">
+                            É especialista em Direito Eleitoral pelo Instituto Brasileiro de Ensino, Desenvolvimento e Pesquisa – IDP, com formação em Advocacia nos Tribunais Superiores pelo Instituto Luiz Mário Moutinho – ILMM e em Assessoria Jurídica-Legislativa. Possui sólida experiência com atuação voltada à defesa de interesses públicos e privados de alta complexidade.
+                        </p>
+                        <p class="texto-medio segmento text-black mt-4">OAB/AL</p>
+                    </div>
+                </div>
+                <div class="line"></div>
+                                <div class="adv-card flex flex-col lg:flex-row lg:gap-[202px] gap-15 w-full justify-center items-center">
+                    <div class="lg:w-[275px] w-[200px] flex justify-center">
+                        <img src="./src/img/advogado-3.webp" alt="Foto do Advogado Jonathnan" class="adv-photo rounded-full">
+                    </div>
+                    
+                    <div class="w-full lg:w-[600px]">
+                        <h3 class="subtitulo text-black mb-2">Jonathan</h3>
+                        <p class="texto-medio text-black">
+                            Daniel Padilha Vilanova, sócio-fundador e especialista em Direito Processual Civil pelo IDP. Atua com ênfase na resolução de conflitos complexos e na mitigação de riscos empresariais e institucionais.
+                        </p>
+                        <p class="texto-medio text-black mt-4">
+                            Com sólida experiência em Direito Público, Empresarial, Eleitoral e Penal Econômico, lidera o setor estratégico do contencioso empresarial. Também se dedica à estruturação e revisão de contratos, mediação e negociação de conflitos, além do planejamento jurídico preventivo. É mediador certificado.
+                        </p>
+                        <p class="texto-medio segmento text-black mt-4">OAB/AL</p>
+                    </div>
+                </div>
+            </div>
+            
         </section>
     </main>
 
