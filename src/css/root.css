@@ -2,6 +2,7 @@
     /* Cores Base */
     --cor-clara: #FFFFFF;
     --cor-dourada: #B69D74;
+    --cor-escura: #181E2B;
 
     /* Fundo */
     --cor-fundo-principal: #263043;
@@ -39,6 +40,13 @@ body{
 
 main{
     overflow-x: hidden;
+}
+
+.titulo-destaque {
+    font-family: var(--open-sans);
+    font-weight: var(--semibold);
+    color: var(--cor-texto-dourado);
+    font-size: clamp(40px, 2.86vw, 55px);
 }
 
 .titulo {

@@ -32,11 +32,6 @@
     width: 100%; 
 }
 
-/* ----------------------------------------------------------------- */
-/* ESTILOS ESSENCIAIS DO MENU MOBILE (Overlay) */
-/* ----------------------------------------------------------------- */
-
-/* Bloqueia o scroll do corpo quando o menu estiver aberto */
 body.no-scroll {
     overflow: hidden;
 }
