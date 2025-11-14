@@ -100,10 +100,6 @@ html {
         width: 100%!important;
     }
 
-    .resposive-img{
-        height: 300px!important;
-    }
-
     .resposive-guia-img{
         height: 200px!important;
     }
@@ -125,6 +121,10 @@ html {
 
     .resposive-guia-img{
         height: 300px;
+    }
+
+    .resposive-img{
+        height: 300px!important;
     }
 }
 

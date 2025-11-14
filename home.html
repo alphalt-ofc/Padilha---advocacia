@@ -64,41 +64,48 @@
     <main id="top">
         <!--carousel-->
         <section class="carrossel relative w-full overflow-hidden">
+            
             <div 
                 id="splash-slide"
                 class="absolute inset-0 z-50 bg-gray-900 transition-opacity duration-[1000ms] ease-in-out"
             >
                 <div class="absolute animate-fade-slide top-1/2 left-1/2  text-center text-white flex flex-col gap-6 w-full max-w-4xl px-4">
                     <img class="logo w-[400px] w-auto self-center" src="./src/img/logo/logo-light.png" alt="Logo de Abertura">
-                    <p class="subtitulo">A Tradição do Direito, a Velocidade da Solução.</p>
+                    <p class="subtitulo px-4">A Tradição do Direito, a Velocidade da Solução.</p>
                 </div>
             </div>
 
-            <div class=" flex transition-transform duration-[1000ms] ease-in-out" id="carousel">
-                <div class="resposive-img w-full h-[500px] flex-shrink-0 relative">
-                    <img 
-                        src="./src/img/carrossel/img1.jpg" 
-                        alt="Imagem do Slide" 
-                        class="absolute w-full h-full object-cover" 
-                        loading="lazy"
-                    >
-                </div>
-                <div class="resposive-img w-full h-[500px] flex-shrink-0 relative">
-                    <img 
-                        src="./src/img/carrossel/img2.jpg" 
-                        alt="Imagem do Slide" 
-                        class="absolute w-full h-full object-cover object-center" 
-                        loading="lazy"
-                    >
-                </div>
-                <div class="resposive-img w-full h-[500px] flex-shrink-0 relative">
-                    <img 
-                        src="./src/img/carrossel/img3.jpg" 
-                        alt="Imagem do Slide" 
-                        class="absolute w-full h-full object-cover" 
-                        loading="lazy"
-                    >
-                </div>
+            <div class="swiper" id="main-carousel">
+                <div class="swiper-wrapper flex transition-transform duration-[1000ms] ease-in-out">
+                    
+                    <div class="swiper-slide resposive-img w-full lg:h-[500px]! flex-shrink-0 relative">
+                        <img 
+                            src="./src/img/carrossel/img1.jpg" 
+                            alt="Imagem do Slide 1" 
+                            class="absolute w-full h-full object-cover" 
+                            loading="lazy"
+                        >
+                    </div>
+                    
+                    <div class="swiper-slide resposive-img w-full lg:h-[500px]! flex-shrink-0 relative">
+                        <img 
+                            src="./src/img/carrossel/img2.jpg" 
+                            alt="Imagem do Slide 2" 
+                            class="absolute w-full h-full object-cover object-center" 
+                            loading="lazy"
+                        >
+                    </div>
+                    
+                    <div class="swiper-slide resposive-img w-full lg:h-[500px]! flex-shrink-0 relative">
+                        <img 
+                            src="./src/img/carrossel/img3.jpg" 
+                            alt="Imagem do Slide 3" 
+                            class="absolute w-full h-full object-cover" 
+                            loading="lazy"
+                        >
+                    </div>
+
+                    </div>
             </div>
         </section>
 
