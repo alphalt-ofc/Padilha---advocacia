@@ -1,0 +1,6 @@
+.carrossel .subtitulo{
+    font-family: var(--eb-garamond);
+    font-weight: var(--regular);
+    color: var(--cor-texto-branco);
+}
+
